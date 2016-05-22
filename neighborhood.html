@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neighborhood</title>
+    <link rel="stylesheet" href="css/reset%20file.css">
+    <link rel="stylesheet" href="css/open_house_styles.css">
+    <link rel="stylesheet" href="css/responsive_styles.css">
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+
+    <script>
+        function initialize() {
+            var mapProp = {
+                center: new google.maps.LatLng(40.1791857, -44.499103),
+                zoom: 6,
+                mapTypeId: google.maps.MapTypeId.TERRAIN
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+</head>
+<body>
+<header>
+    <div class="global_navbar">
+        <ul class="global_nav_menu_list">
+            <li class="global_nav_menu_item "><a class="global_nav_links" href="open_house.html">home</a></li>
+            <li class="global_nav_menu_item"><a class="global_nav_links" href="availability.html">availability</a></li>
+            <li class="global_nav_menu_item"><a class="global_nav_links" href="interiors.html">interiors</a></li>
+            <li class="global_nav_menu_item"><a class="global_nav_links" href="amenities.html">amenities</a></li>
+            <li class="global_nav_menu_item"><a class="global_nav_links active"
+                                                href="neighborhood.html">neignborhoods</a></li>
+            <li class="global_nav_menu_item"><a class="global_nav_links" href="contact.html">contact</a></li>
+        </ul>
+    </div>
+    <img class="header_logo" src="img/header_logo.png">
+
+</header>
+<div id="content_neigborhood">
+    <div class="slide">
+        <div class="slide_sticks">
+            <div class="stick first_stick"></div>
+            <div class="stick second_stick"></div>
+            <div class="stick third_stick"></div>
+        </div>
+        <img class="slide_image first_image" src="img/image05.jpg">
+        <img class="slide_image second_image" src="img/image01.jpg">
+        <img class="slide_image third_image" src="img/image04.jpg">
+    </div>
+    <h2 class="neighborhood_heading">lic</h2>
+    <div class="content_paragraph">
+        <p class="content_paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+        </p>
+        <button class="button_gallery" type="button">photo gallery</button>
+        <div id="googleMap" class="google_map"></div>
+    </div>
+</div>
+<footer>
+    <div class="footer_text_area">
+        <p class="footer_text">44-72 11TH STREET, LONG ISLAND CITY, NY, 11101 - 347.662.2106 - <a class="footer_link"
+                                                                                                  href="#">INFO4472@ELEVENTHST.COM</a>
+        </p>
+    </div>
+    <img class="footer_logo" src="img/logo.png"/>
+</footer>
+<script>
+    $(".second_image, .third_image").hide();
+    $(".first_image").show();
+    $(".slide_sticks .stick").removeClass("active_stick");
+    $(".first_stick").addClass("active_stick");
+
+    $(".first_stick").click(function () {
+        $(".slide_sticks .stick").removeClass("active_stick");
+        $(this).addClass("active_stick");
+        $(".second_image, .third_image").hide();
+        $(".first_image").show();
+    });
+    $(".second_stick").click(function () {
+        $(".slide_sticks .stick").removeClass("active_stick");
+        $(this).addClass("active_stick");
+        $(".first_image, .third_image").hide();
+        $(".second_image").show();
+    });
+    $(".third_stick").click(function () {
+        $(".slide_sticks .stick").removeClass("active_stick");
+        $(this).addClass("active_stick");
+        $(".first_image, .second_image").hide();
+        $(".third_image").show();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,514 @@
+/*01 header
+  02 open house
+  03 availability
+  04 interiors
+  05 amenities
+  06 neighborhood
+  07 contact
+  08 footer
+  */
+
+body {
+    position: absolute;
+    font-family: 'Arial', sans-serif;
+    margin: 160px auto 0;
+    text-align: center;
+    text-transform: uppercase;
+    min-width: 100%;
+    min-height: 100%;
+    padding-bottom: 180px;
+}
+
+header {
+    margin: auto;
+    width: 100%;
+    display: block;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: #5cbfaa;
+}
+
+h1 {
+    margin: auto;
+    text-decoration: none;
+    color: #5bb9a4;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+/* 01 header*/
+
+.global_nav_menu_list {
+    padding: 0;
+    height: auto;
+    list-style-type: none;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: #000;
+    text-align: center;
+    width: 100%;
+}
+
+.global_nav_menu_item {
+    margin: 15px 16px;
+    display: inline-block;
+    position: relative;
+
+}
+
+.global_nav_links {
+    color: #5cc2a8;
+    text-decoration: none;
+    font-size: 8px;
+    letter-spacing: 3px;;
+    font-weight: 900;
+}
+
+.global_nav_links:hover {
+    color: #fff;
+
+}
+
+.active {
+    color: #fff;
+}
+
+.header_logo {
+    width: 180px;
+    margin: 20px auto;
+}
+
+/*02 home page*/
+.slide {
+    position: relative;
+    margin: auto;
+    width: 960px;
+    overflow: hidden;
+}
+
+.slide_sticks {
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.stick {
+    width: 40px;
+    height: 5px;
+    background-color: #5bb9a4;
+    cursor: pointer;
+}
+
+.stick:hover {
+    background-color: #ffffff;
+}
+
+.active_stick {
+    background-color: #ffffff;
+}
+
+.second_stick {
+    margin: 10px auto;
+}
+
+.leasing {
+    position: absolute;
+    text-align: center;
+    bottom: 80px;
+    width: 100%;
+}
+
+.leasing_text {
+    width: 100%;
+    color: #5cbfaa;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    position: absolute;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    bottom: 45px;
+}
+
+.content_paragraph {
+    font-family: 'fantasy';
+    line-height: 25px;
+    text-align: center;
+    font-weight: 700;
+    font-size: medium;
+    width: 900px;
+    margin: 25px auto;
+    text-transform: none;
+    color: #201f25;
+}
+
+.button_gallery {
+    background-color: #5bbea9;
+    margin: 15px auto;
+    width: 300px;
+    height: 40px;
+    border: none;
+    display: block;
+    padding: 0;
+}
+
+.button_gallery {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button_gallery_link {
+    text-decoration: none;
+}
+
+.open_house_heading {
+    margin: 40px 0 0 0;
+}
+
+.open_house_day {
+    color: #5cbfaa;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    margin: auto;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.form_area {
+    margin: 20px auto 0;
+    width: 805px;
+}
+
+.fill_info {
+    width: 396px;
+    height: 40px;
+    margin: 3px 1px;
+    border: none;
+    background-color: #d1d1d1;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 5px;;
+    text-transform: uppercase;
+}
+
+.text_area {
+    width: 800px;
+    margin: 20px auto;
+    height: 40px;
+    color: #d3d3d3;
+}
+
+.questions {
+    display: block;
+    color: #5cbfaa;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.sub_button {
+    width: 200px;
+    height: 40px;
+    background-color: #5abda9;
+    color: #ffffff;
+    text-align: center;
+    font-size: small;
+    font-weight: 900;
+    letter-spacing: 5px;;
+    border: none;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+}
+
+/* 03 availabiliti page*/
+
+.availability_menu {
+    text-align: center;
+    list-style-type: none;
+    margin: 20px auto;
+    display: block;
+
+}
+
+.availability_menu_item {
+    display: inline-block;
+    margin: auto 20px;
+
+}
+
+.availability_menu_links {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: medium;
+    font-weight: 900;
+    letter-spacing: 3px;;
+    text-transform: uppercase;
+}
+
+.availability_menu_links:hover {
+    border-bottom: 4px solid #5cc2a8;
+    color: #5cc2a8;
+}
+
+.availability_activa {
+    border-bottom: 4px solid #5cc2a8;
+    color: #5cc2a8;
+}
+
+.section {
+    margin: auto;
+    display: block;
+    width: 718px;
+}
+
+.text {
+    display: inline-block;
+    margin: 3px 0;
+    text-align: center;
+    height: 30px;
+
+}
+
+.lists_names,
+.lists_links {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 10px;
+    display: block;
+}
+
+.text:not(.first) {
+    background-color: #d5d5d5;
+}
+
+.first {
+    width: 60px;
+    background-color: #5BBBA8;
+}
+
+.sec {
+    width: 210px;
+}
+
+.third {
+    width: 170px;
+}
+
+.fourth {
+    width: 100px;
+}
+
+.fifth {
+    width: 160px;
+}
+
+.floorplan_text {
+    text-align: center;
+    font-size: medium;
+    width: 900px;
+    margin: 20px auto 20px;
+    font-family: 'fantasy';
+    line-height: 25px;
+    font-weight: 800;
+    text-transform: none;
+    color: #201f25
+}
+
+/* 04 interiors page*/
+.photo_gallery {
+    width: 960px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.gallery_image {
+    width: 100%;
+    height: 100%;
+}
+
+.image_buttons {
+    margin: 20px auto 0;
+    width: 804px;
+    display: block;
+}
+
+.image_button {
+    width: 396px;
+    height: 40px;
+    margin: 3px 1px;
+    border: none;
+    background-color: #d1d1d1;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 5px;;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.interior_heading {
+    margin: 15px auto;
+}
+
+.bullet_list {
+    color: #5cbfaa;
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 3px auto;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    width: 600px;
+    line-height: 25px;
+}
+
+.interior_text {
+    text-align: center;
+    font-size: medium;
+    width: 900px;
+    margin: 20px auto;
+    font-family: 'fantasy';
+    line-height: 25px;
+    font-weight: 700;
+    text-transform: none;
+    color: #201f25
+}
+
+.btn_availability {
+    margin: 10px auto 10px;
+    width: 396px;
+    height: 40px;
+    background-color: #5bbea9;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*05 amenities page*/
+.amenities_heading {
+    margin: 15px auto;
+}
+
+.amenities_text {
+    text-align: center;
+    font-size: medium;
+    width: 900px;
+    margin: 20px auto;
+    font-family: 'fantasy';
+    line-height: 25px;
+    font-weight: 700;
+    text-transform: none;
+    color: #201f25
+}
+
+/* 06 neighborhood page*/
+
+.neighborhood_heading {
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.google_map {
+    width: 962px;
+    height: 400px;
+    margin: 50px auto 0;
+}
+
+/* 07 contact*/
+.contact_text,
+.contact_links {
+    width: 700px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 5px auto;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #24232c;
+    text-decoration: none;
+    line-height: 25px;
+}
+
+.contact_heading {
+    margin: 15px auto 0;
+    font-size: 45px;
+}
+
+/* 08 footer*/
+footer, body:after {
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+}
+
+.footer_text_area {
+    width: 100%;
+    background-color: black;
+    height: 45px;
+    display: table;
+}
+
+.footer_text {
+    color: #5cc2a8;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 3px;;
+    font-weight: 800;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.footer_link {
+    color: #5cc2a8;
+    font-size: 10px;
+    letter-spacing: 3px;;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.footer_logo {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 20px auto 50px;
+}
