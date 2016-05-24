@@ -10,18 +10,15 @@ $(" .slide__stick").click(function () {
 
 
 $(".slide__first_stick").click(function () {
-    $(".second_image, .third_image").hide();
     $(".first_image").show();
 });
 
 $(".slide__second_stick").click(function () {
-    $(".first_image, .third_image").hide();
     $(".second_image").show();
 });
 
 
 $(".slide__third_stick").click(function () {
-    $(".first_image, .second_image").hide();
     $(".third_image").show();
 });
 

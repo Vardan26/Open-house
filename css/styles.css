@@ -96,6 +96,8 @@ h1 {
 }
 
 
+
+
 .image__slider__images {
     position: relative;
     margin: auto;
@@ -166,6 +168,11 @@ h1 {
 .hidden {
     display: none;
 }
+
+
+
+
+
 
 .image__slide__sticks {
     z-index: 1;
