@@ -1,13 +1,13 @@
 @media screen and (max-width: 960px) {
-    .slide {
+    .image__slider {
         width: 100%;
     }
 
-    .slide_image {
+    .slide__image {
         width: 100%;
     }
 
-    .content_paragraph,
+    .home_page__paragraph,
     .amenities_text,
     .interior_text {
         width: auto;
@@ -39,23 +39,24 @@
         font-size: 7px;
     }
 
-    .slide_sticks {
+    .image__slide__sticks {
         display: none;
     }
 
-    .form_area {
+    .form {
         display: block;
         width: auto;
     }
 
-    .image_buttons {
-        display: block;
-        width: auto;
-    }
-
-    .text_area {
+    .form__text_area {
         width: 396px;
     }
+
+    .photo_gallery__buttons {
+        display: block;
+        width: auto;
+    }
+
 }
 
 @media screen and (max-width: 735px) {
@@ -63,42 +64,42 @@
         margin: auto 10px;
     }
 
-    .section {
+    .availability__section {
         margin: auto;
         display: block;
         width: 410px;
     }
 
-    .text {
+    .availability__section_item {
         float: left;
         margin: 3px 1px;
         height: 25px;
 
     }
 
-    .lists_names,
-    .lists_links {
+    .availability__section__lists_names,
+    .availability__section__lists_links {
         font-size: 7px;
 
     }
 
-    .first {
+    .availability__section__first_item {
         width: 40px;
     }
 
-    .sec {
+    .availability__section__second_item {
         width: 110px;
     }
 
-    .third {
+    .availability__section__third_item {
         width: 90px;
     }
 
-    .fourth {
+    .availability__section__fourth_item {
         width: 60px;
     }
 
-    .fifth {
+    .availability__section__fifth_item {
         width: 85px;
     }
 }
@@ -124,11 +125,10 @@
         font-size: 30px;
     }
 
-    .open_house_day, .leasing_text, .questions {
+    .open_house__heading__text, .open_house__slide_text, .form__title {
         font-size: 15px;
     }
 
-    .bullet_list,
     .contact_text,
     .contact_links {
         width: 100%;
@@ -140,23 +140,23 @@
 
 @media screen and (max-width: 480px) {
 
-    .leasing {
+    .open_house__slide_heading {
         bottom: 40px;
     }
 
-    .leasing_text {
+    .open_house__slide_text {
         bottom: 15px;
     }
 
-    .fill_info {
+    .form__info {
         width: 70%;
     }
 
-    .text_area {
+    .form__text_area {
         width: 70%;
     }
 
-    .button_gallery {
+    .photo__gallery__button {
         width: 200px;
     }
 
@@ -168,7 +168,7 @@
         width: 70%;
     }
 
-    .btn_availability {
+    .availability__btn {
         width: 70%;
     }
 }
@@ -179,39 +179,38 @@
         margin: auto 5px;
     }
 
-    .section {
+    .availability__section {
         margin: auto;
         display: block;
         width: 295px;
     }
 
-    .lists_names,
-    .lists_links {
+    .availability__section__lists_names,
+    .availability__section__lists_links {
         font-size: 6px;
 
     }
 
-    .first {
+    .availability__section__first_item {
         width: 30px;
     }
 
-    .sec {
+    .availability__section__second_item {
         width: 85px;
     }
 
-    .third {
+    .availability__section__third_item {
         width: 60px;
     }
 
-    .fourth {
+    .availability__section__fourth_item {
         width: 40px;
     }
 
-    .fifth {
+    .availability__section__fifth_item {
         width: 70px;
     }
 
-    .bullet_list,
     .contact_text,
     .contact_links {
         width: 100%;

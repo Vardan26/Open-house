@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Neighborhood</title>
-    <link rel="stylesheet" href="css/reset%20file.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/open_house_styles.css">
     <link rel="stylesheet" href="css/responsive_styles.css">
     <script src="http://maps.googleapis.com/maps/api/js"></script>
@@ -26,41 +26,41 @@
 <header>
     <div class="global_navbar">
         <ul class="global_nav_menu_list">
-            <li class="global_nav_menu_item "><a class="global_nav_links" href="open_house.html">home</a></li>
+            <li class="global_nav_menu_item "><a class="global_nav_links " href="open_house.html">home</a></li>
             <li class="global_nav_menu_item"><a class="global_nav_links" href="availability.html">availability</a></li>
             <li class="global_nav_menu_item"><a class="global_nav_links" href="interiors.html">interiors</a></li>
             <li class="global_nav_menu_item"><a class="global_nav_links" href="amenities.html">amenities</a></li>
-            <li class="global_nav_menu_item"><a class="global_nav_links active"
-                                                href="neighborhood.html">neignborhoods</a></li>
+            <li class="global_nav_menu_item"><a class="global_nav_links global_nav_links_active" href="neighborhood.html">neignborhoods</a></li>
             <li class="global_nav_menu_item"><a class="global_nav_links" href="contact.html">contact</a></li>
         </ul>
     </div>
     <img class="header_logo" src="img/header_logo.png">
-
 </header>
 <div id="content_neigborhood">
-    <div class="slide">
-        <div class="slide_sticks">
-            <div class="stick first_stick"></div>
-            <div class="stick second_stick"></div>
-            <div class="stick third_stick"></div>
+    <div class="image__slider">
+        <div class="image__slide__sticks">
+            <div class="slide__stick slide__first_stick"></div>
+            <div class="slide__stick slide__second_stick"></div>
+            <div class="slide__stick slide__third_stick"></div>
         </div>
-        <img class="slide_image first_image" src="img/image05.jpg">
-        <img class="slide_image second_image" src="img/image01.jpg">
-        <img class="slide_image third_image" src="img/image04.jpg">
+        <div class="image__slider__images">
+            <img class="slide__image first_image " src="img/image05.jpg">
+            <img class="slide__image second_image" src="img/image04.jpg">
+            <img class="slide__image third_image" src="img/image03.jpg">
+        </div>
     </div>
     <h2 class="neighborhood_heading">lic</h2>
-    <div class="content_paragraph">
-        <p class="content_paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-        </p>
-        <button class="button_gallery" type="button">photo gallery</button>
-        <div id="googleMap" class="google_map"></div>
-    </div>
+    <p class="open_house__paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua.
+    </p>
+    <a class="gallery__button__link" href="photo_gallery.html">
+        <button class="photo__gallery__button" type="button"> photo gallery</button>
+    </a>
+    <div id="googleMap" class="google_map"></div>
 </div>
 <footer>
     <div class="footer_text_area">
@@ -70,30 +70,7 @@
     </div>
     <img class="footer_logo" src="img/logo.png"/>
 </footer>
-<script>
-    $(".second_image, .third_image").hide();
-    $(".first_image").show();
-    $(".slide_sticks .stick").removeClass("active_stick");
-    $(".first_stick").addClass("active_stick");
+<script src="js/open_house.js"></script>
 
-    $(".first_stick").click(function () {
-        $(".slide_sticks .stick").removeClass("active_stick");
-        $(this).addClass("active_stick");
-        $(".second_image, .third_image").hide();
-        $(".first_image").show();
-    });
-    $(".second_stick").click(function () {
-        $(".slide_sticks .stick").removeClass("active_stick");
-        $(this).addClass("active_stick");
-        $(".first_image, .third_image").hide();
-        $(".second_image").show();
-    });
-    $(".third_stick").click(function () {
-        $(".slide_sticks .stick").removeClass("active_stick");
-        $(this).addClass("active_stick");
-        $(".first_image, .second_image").hide();
-        $(".third_image").show();
-    });
-</script>
 </body>
 </html>

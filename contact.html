@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
-    <link rel="stylesheet" href="css/reset%20file.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/open_house_styles.css">
     <link rel="stylesheet" href="css/responsive_styles.css">
 </head>
@@ -11,37 +11,34 @@
 <header>
     <div class="global_navbar">
         <ul class="global_nav_menu_list">
-            <li class="global_nav_menu_item "><a class="global_nav_links" href="open_house.html">home</a></li>
+            <li class="global_nav_menu_item "><a class="global_nav_links " href="open_house.html">home</a></li>
             <li class="global_nav_menu_item"><a class="global_nav_links" href="availability.html">availability</a></li>
             <li class="global_nav_menu_item"><a class="global_nav_links" href="interiors.html">interiors</a></li>
             <li class="global_nav_menu_item"><a class="global_nav_links" href="amenities.html">amenities</a></li>
             <li class="global_nav_menu_item"><a class="global_nav_links" href="neighborhood.html">neignborhoods</a></li>
-            <li class="global_nav_menu_item"><a class="global_nav_links active" href="contact.html">contact</a></li>
+            <li class="global_nav_menu_item"><a class="global_nav_links global_nav_links_active" href="contact.html">contact</a></li>
         </ul>
     </div>
     <img class="header_logo" src="img/header_logo.png">
-
 </header>
-<div id="content_contact">
+<div id="contact_content">
     <ul class="contact_text">
         <li>44-72 11TH ST, LONG ISLAND CITY</li>
         <li><a class="contact_links" href="#">347.662.2106</a></li>
         <li><a class="contact_links" href="#">INFO4472@ELEVENTHST.COM</a></li>
     </ul>
-    <div id="form_area">
-        <h2 class="contact_heading">contact us</h2>
-        <form class="form_area">
-            <input class="fill_info" type="text" value="first name">
-            <input class="fill_info" type="text" value="last name">
-            <input class="fill_info" type="text" value="email">
-            <input class="fill_info" type="text" value="phone">
-            <input class="fill_info" type="text" value="# of beds">
-            <input class="fill_info" type="text" value="budget">
-            <span class="questions">questions / comments</span>
-            <input class="text_area" type="text">
-            <input class="sub_button" type="submit" value="submit">
-        </form>
-    </div>
+    <h2 class="contact_heading">contact us</h2>
+    <form class="form">
+        <input class="form__info" type="text" value="first name">
+        <input class="form__info" type="text" value="last name">
+        <input class="form__info" type="text" value="email">
+        <input class="form__info" type="text" value="phone">
+        <input class="form__info" type="text" value="# of beds">
+        <input class="form__info" type="text" value="budget">
+        <span class="form__title">questions / comments</span>
+        <input class="form__text_area" type="text">
+        <input class="form__sub_button" type="submit" value="submit">
+    </form>
 </div>
 <footer>
     <div class="footer_text_area">
@@ -50,5 +47,7 @@
     </div>
     <img class="footer_logo" src="img/logo.png"/>
 </footer>
+<script src="js/open_house.js"></script>
+
 </body>
 </html>
