@@ -47,7 +47,7 @@ h1 {
 
 /* 01 header*/
 
-.global_nav_menu_list {
+.navMenu__list {
     padding: 0;
     height: auto;
     list-style-type: none;
@@ -58,14 +58,14 @@ h1 {
     width: 100%;
 }
 
-.global_nav_menu_item {
+.navMenu__list__item {
     margin: 15px 16px;
     display: inline-block;
     position: relative;
 
 }
 
-.global_nav_links {
+.navMenu__list__links {
     color: #5cc2a8;
     text-decoration: none;
     font-size: 8px;
@@ -73,22 +73,22 @@ h1 {
     font-weight: 900;
 }
 
-.global_nav_links:hover {
+.navMenu__list__links:hover {
     color: #fff;
 
 }
 
-.global_nav_links_active {
+.navMenu__list__linksActive {
     color: #fff;
 }
 
-.header_logo {
+.headerLogo {
     width: 180px;
     margin: 20px auto;
 }
 
 /*02 home page*/
-.image__slider {
+.slider {
     position: relative;
     margin: auto;
     width: 960px;
@@ -98,7 +98,7 @@ h1 {
 
 
 
-.image__slider__images {
+.imgBox {
     position: relative;
     margin: auto;
     width: 960px;
@@ -106,7 +106,7 @@ h1 {
     overflow: hidden;
 }
 
- .slide__image{
+ .imgBox__image {
      width: 100%;
      height: 100%;
      position: absolute;
@@ -120,17 +120,17 @@ h1 {
      animation: imageAnimation 16s linear infinite 0s;
  }
 
-.slide__image:nth-child(2)  {
+.imgBox__image:nth-child(2)  {
     -webkit-animation-delay: 4s;
     -moz-animation-delay: 4s;
     animation-delay: 4s;
 }
-.slide__image:nth-child(3) {
+.imgBox__image:nth-child(3) {
     -webkit-animation-delay: 8s;
     -moz-animation-delay: 8s;
     animation-delay: 8s;
 }
-.slide__image:nth-child(4) {
+.imgBox__image:nth-child(4) {
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     animation-delay: 12s;
@@ -166,7 +166,7 @@ h1 {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 
@@ -174,21 +174,21 @@ h1 {
 
 
 
-.image__slide__sticks {
+.stickBox {
     z-index: 1;
     position: absolute;
     top: 50px;
     right: 50px;
 }
 
-.slide__stick {
+.sticBox__stic {
     width: 40px;
     height: 5px;
     background-color: #5bb9a4;
     cursor: pointer;
 }
 
-.slide__stick:hover {
+.sticBox__stic:hover {
     background-color: #fff;
 }
 .active_stick{
@@ -196,18 +196,18 @@ h1 {
 
 }
 
-.slide__second_stick {
+.sticBox__stick2 {
     margin: 10px auto;
 }
 
-.open_house__slide_heading {
+.openHouse__slide__heading {
     position: absolute;
     text-align: center;
     bottom: 80px;
     width: 100%;
 }
 
-.open_house__slide_text {
+.openHouse__slide_text {
     width: 100%;
     color: #5cbfaa;
     text-align: center;
@@ -219,7 +219,8 @@ h1 {
     bottom: 45px;
 }
 
-.open_house__paragraph {
+.neighborhoodParagraph,
+.openHouseParagraph{
     font-family: 'fantasy';
     line-height: 25px;
     text-align: center;
@@ -231,7 +232,7 @@ h1 {
     color: #201f25;
 }
 
-.photo__gallery__button {
+.photoGalleryBtn {
     background-color: #5bbea9;
     margin: 15px auto;
     width: 300px;
@@ -249,15 +250,15 @@ h1 {
     cursor: pointer;
 }
 
-.gallery__button__link {
+.photoGalleryBtn__link {
     text-decoration: none;
 }
 
-.open_house__heading {
+.openHouseHeading {
     margin: 40px 0 0 0;
 }
 
-.open_house__heading__text {
+.openHouseHeading__text {
     color: #5cbfaa;
     text-align: center;
     font-weight: 900;
@@ -286,7 +287,7 @@ h1 {
     text-transform: uppercase;
 }
 
-.form__text_area {
+.form__textArea {
     width: 800px;
     margin: 20px auto;
     height: 40px;
@@ -304,7 +305,7 @@ h1 {
     text-transform: uppercase;
 }
 
-.form__sub_button {
+.form__subButton {
     width: 200px;
     height: 40px;
     background-color: #5abda9;
@@ -323,7 +324,7 @@ h1 {
 
 /* 03 availabiliti page*/
 
-.availability_menu {
+.availabilityMenu {
     text-align: center;
     list-style-type: none;
     margin: 20px auto;
@@ -331,13 +332,13 @@ h1 {
 
 }
 
-.availability_menu_item {
+.availabilityMenu__item {
     display: inline-block;
     margin: auto 20px;
 
 }
 
-.availability_menu_links {
+.availabilityMenu__links {
     color: black;
     text-decoration: none;
     text-align: center;
@@ -347,7 +348,7 @@ h1 {
     text-transform: uppercase;
 }
 
-.availability_menu_links:hover {
+.availabilityMenu__links:hover {
     border-bottom: 4px solid #5cc2a8;
     color: #5cc2a8;
 }
@@ -357,13 +358,12 @@ h1 {
     color: #5cc2a8;
 }
 
-.availability__section {
+.availabilityRooms:not(.availabilityPhotoGallery) {
     margin: auto;
     display: block;
-    width: 718px;
 }
 
-.availability__section_item {
+.availabilityRooms__list {
     display: inline-block;
     margin: 3px 0;
     text-align: center;
@@ -371,8 +371,8 @@ h1 {
 
 }
 
-.availability__section__lists_names,
-.availability__section__lists_links {
+.availabilityRooms__lists__names,
+.availabilityRooms__lists__links {
     font-size: 10px;
     font-weight: 800;
     letter-spacing: 2px;;
@@ -382,32 +382,32 @@ h1 {
     display: block;
 }
 
-.availability__section_item:not(.availability__section__first_item) {
+.availabilityRooms__list:not(.availabilityRooms__type) {
     background-color: #d5d5d5;
 }
 
-.availability__section__first_item {
+.availabilityRooms__type {
     width: 60px;
     background-color: #5BBBA8;
 }
 
-.availability__section__second_item {
+.availabilityRooms__price {
     width: 210px;
 }
 
-.availability__section__third_item {
+.availabilityRooms__avail {
     width: 170px;
 }
 
-.availability__section__fourth_item {
+.availabilityRooms__images {
     width: 100px;
 }
 
-.availability__section__fifth_item {
+.availabilityRooms__floorplan {
     width: 160px;
 }
 
-.floorplan_text {
+.floorplanText {
     text-align: center;
     font-size: medium;
     width: 900px;
@@ -418,9 +418,20 @@ h1 {
     text-transform: none;
     color: #201f25
 }
+.floorplan{
+    margin-top: 20px;
+}
+
+.availabilityPhotoGallery{
+    width: 960px;
+    height: auto;
+    margin: 20px auto 0;
+    display: block;
+}
+
 
 /* 04 interiors page*/
-.amenities_interior__bullet_list {
+.amenitiesInteriorBullets {
     color: #5cbfaa;
     text-align: center;
     font-weight: 800;
@@ -432,25 +443,27 @@ h1 {
     line-height: 25px;
 }
 
-.photo_gallery {
+.photoGallery{
     width: 960px;
     height: auto;
     margin: auto;
     overflow: hidden;
 }
 
-.gallery_image {
+
+.photoGallery__image {
     width: 100%;
     height: 100%;
+    margin: auto;
 }
 
-.photo_gallery__buttons {
+.photoGallery__buttons {
     margin: 20px auto 0;
     width: 804px;
     display: block;
 }
 
-.image_button {
+.imageButton {
     width: 396px;
     height: 40px;
     margin: 3px 1px;
@@ -464,12 +477,12 @@ h1 {
     cursor: pointer;
 }
 
-.interior_heading {
+.interiorHeading {
     margin: 15px auto;
 }
 
 
-.interior_text {
+.interiorParagraph {
     text-align: center;
     font-size: medium;
     width: 900px;
@@ -481,7 +494,7 @@ h1 {
     color: #201f25
 }
 
-.availability__btn {
+.availabilityBtn {
     margin: 10px auto 10px;
     width: 396px;
     height: 40px;
@@ -497,11 +510,11 @@ h1 {
 }
 
 /*05 amenities page*/
-.amenities_heading {
+.amenitiesHeading {
     margin: 15px auto;
 }
 
-.amenities_text {
+.amenitiesParagraph {
     text-align: center;
     font-size: medium;
     width: 900px;
@@ -515,7 +528,7 @@ h1 {
 
 /* 06 neighborhood page*/
 
-.neighborhood_heading {
+.neighborhoodHeading {
     font-weight: 700;
     margin-top: 15px;
 }
@@ -527,8 +540,8 @@ h1 {
 }
 
 /* 07 contact*/
-.contact_text,
-.contact_links {
+.contactText,
+.contactLinks {
     width: 700px;
     text-align: center;
     font-weight: 800;
@@ -541,7 +554,7 @@ h1 {
     line-height: 25px;
 }
 
-.contact_heading {
+.contactHeading {
     margin: 15px auto 0;
     font-size: 45px;
 }
@@ -554,14 +567,14 @@ footer, body:after {
     width: 100%;
 }
 
-.footer_text_area {
+.footerTextArea {
     width: 100%;
     background-color: black;
     height: 45px;
     display: table;
 }
 
-.footer_text {
+.footerText {
     color: #5cc2a8;
     text-align: center;
     font-size: 10px;
@@ -571,7 +584,7 @@ footer, body:after {
     display: table-cell;
 }
 
-.footer_link {
+.footerLink {
     color: #5cc2a8;
     font-size: 10px;
     letter-spacing: 3px;;
@@ -579,7 +592,7 @@ footer, body:after {
     text-decoration: none;
 }
 
-.footer_logo {
+.footerLogo {
     width: 200px;
     height: auto;
     display: block;

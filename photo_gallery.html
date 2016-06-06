@@ -3,25 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Photo Gallery</title>
-    <link rel="stylesheet" href="css/reset%20file.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mq.css">
     <script src="js/jquery-2.2.3.min.js"></script>
 </head>
 <body>
-<div class="photo_gallery slide">
-    <img class="slide_image first_image" src="img/image01.jpg">
-    <img class="slide_image second_image" src="img/image02.jpg">
-    <img class="slide_image third_image" src="img/image03.jpg">
-</div>
-<div class="photo_gallery__buttons">
-    <button class="back image_button" type="button">go back</button>
-    <button class="next image_button" type="button">next image</button>
+<div class="photoGallery ">
+    <img class="photoGallery__image photoGallery__img__first" src="img/image01.jpg">
+    <img class="photoGallery__image photoGallery__img__second hidden" src="img/image02.jpg">
+    <img class="photoGallery__image photoGallery__img__three hidden" src="img/image03.jpg">
+    <div class="photoGallery__buttons">
+        <button class="photoGallery__imgBack imageButton" type="button">go back</button>
+        <button class="photoGallery__imgNext imageButton" type="button">next image</button>
+    </div>
 </div>
 <script>
-
-    $(".second_image, .third_image").css("display","none");
-    $(".first_image").show();
 
 </script>
 </body>

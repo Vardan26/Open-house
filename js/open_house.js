@@ -3,69 +3,83 @@
  */
 
 
-$(" .slide__stick").click(function () {
+
+
+$(" .sticBox__stic").on('click', function () {
     $(".active_stick").removeClass("active_stick");
     $(this).addClass("active_stick");
 });
 
 
-$(".slide__first_stick").click(function () {
-    $(".first_image").show();
+$(".sticBox__stic1").on('click', function () {
+    $(".first_image").removeClass("hidden");
 });
 
-$(".slide__second_stick").click(function () {
-    $(".second_image").show();
-});
-
-
-$(".slide__third_stick").click(function () {
-    $(".third_image").show();
+$(".sticBox__stick2").on('click', function () {
+    $(".second_image").removeClass("hidden");
 });
 
 
-$(" .availability_menu_links").click(function () {
+$(".sticBox__stic3").on('click', function () {
+    $(".third_image").removeClass("hidden");
+});
+
+
+
+
+
+
+$(".availabilityRooms__images").on('click', function () {
+    $('.availabilityRooms').not($(this).closest('.availabilityRooms')).addClass("hidden");
+    $(".floorplan").addClass("hidden");
+    $('.availabilityPhotoGallery').not($(this).closest('.availabilityPhotoGallery')).removeClass("hidden");
+
+
+});
+
+$(".availabilityRooms__floorplan").on('click', function () {
+    $('.availabilityRooms').not($(this).closest('.availabilityRooms')).addClass("hidden");
+    $(".availabilityPhotoGallery").addClass("hidden");
+    $(".floorplan").removeClass("hidden");
+
+});
+
+
+
+
+$(" .availabilityMenu__links").on('click', function () {
     $(".availability__menu__active").removeClass("availability__menu__active");
     $(this).addClass("availability__menu__active");
 });
 
-$(".all_links").click(function () {
-    $(".availability__section").show();
-    $(".image__slider, .floorplan").addClass("hide");
+$(".allLinks").on('click', function () {
+    $(".availabilityRooms").removeClass("hidden");
+    $(".availabilityPhotoGallery, .floorplan").addClass("hidden");
 });
 
-$(".studio_links").click(function () {
-    $(".one_bed__section, .two_bed__section, .photo_gallery, .floorplan").hide();
-    $(".studio__section").show();
+$(".studioLinks").on('click', function () {
+    $(".oneBedRooms, .twoBedRooms, .availabilityPhotoGallery, .floorplan").addClass("hidden");
+    $(".studioRooms").removeClass("hidden");
 });
 
-$(".one_bed_links").click(function () {
-    $(".studio__section, .two_bed__section, .photo_gallery, .floorplan").hide();
-    $(".one_bed__section").show();
+$(".oneBedLinks").on('click', function () {
+    $(".studioRooms, .twoBedRooms, .availabilityPhotoGallery, .floorplan").addClass("hidden");
+    $(".oneBedRooms").removeClass("hidden");
 });
 
-$(".two_bed_links").click(function () {
-    $(".studio__section, .one_bed__section,.photo_gallery, .floorplan").hide();
-    $(".two_bed__section").show();
-});
-
-
-$(".photo_gallery").addClass("hidden");
-
-$(".floorplan").addClass("hidden");
-
-$(".availability__section__fourth_item").click(function () {
-    $('.availability__section').not($(this).closest('.availability__section')).hide();
-    $(".floorplan").hide();
-    $(".photo_gallery").show();
-
+$(".twoBedLinks").on('click', function () {
+    $(".studioRooms, .oneBedRooms,.availabilityPhotoGallery, .floorplan").addClass("hidden");
+    $(".twoBedRooms").removeClass("hidden");
 });
 
 
-$(".availability__section__fifth_item").click(function () {
-    $('.availability__section').not($(this).closest('.availability__section')).hide();
-    $(".photo_gallery").hide();
-    $(".floorplan").show();
 
-});
-
-
+function initialize() {
+    var mapProp = {
+        center: new google.maps.LatLng(40.1791857, -44.499103),
+        zoom: 6,
+        mapTypeId: google.maps.MapTypeId.TERRAIN
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);

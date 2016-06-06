@@ -8,67 +8,54 @@
     <link rel="stylesheet" href="css/mq.css">
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script src="js/jquery-2.2.3.min.js"></script>
-
-    <script>
-        function initialize() {
-            var mapProp = {
-                center: new google.maps.LatLng(40.1791857, -44.499103),
-                zoom: 6,
-                mapTypeId: google.maps.MapTypeId.TERRAIN
-            };
-            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script>
 </head>
 <body>
 <header>
-    <div class="global_navbar">
-        <ul class="global_nav_menu_list">
-            <li class="global_nav_menu_item "><a class="global_nav_links " href="open_house.html">home</a></li>
-            <li class="global_nav_menu_item"><a class="global_nav_links" href="availability.html">availability</a></li>
-            <li class="global_nav_menu_item"><a class="global_nav_links" href="interiors.html">interiors</a></li>
-            <li class="global_nav_menu_item"><a class="global_nav_links" href="amenities.html">amenities</a></li>
-            <li class="global_nav_menu_item"><a class="global_nav_links global_nav_links_active" href="neighborhood.html">neignborhoods</a></li>
-            <li class="global_nav_menu_item"><a class="global_nav_links" href="contact.html">contact</a></li>
+    <div class="navMenu">
+        <ul class="navMenu__list">
+            <li class="navMenu__list__item "><a class="navMenu__list__links " href="open_house.html">home</a></li>
+            <li class="navMenu__list__item"><a class="navMenu__list__links" href="availability.html">availability</a></li>
+            <li class="navMenu__list__item"><a class="navMenu__list__links" href="interiors.html">interiors</a></li>
+            <li class="navMenu__list__item"><a class="navMenu__list__links" href="amenities.html">amenities</a></li>
+            <li class="navMenu__list__item"><a class="navMenu__list__links navMenu__list__linksActive" href="neighborhood.html">neignborhoods</a></li>
+            <li class="navMenu__list__item"><a class="navMenu__list__links" href="contact.html">contact</a></li>
         </ul>
     </div>
-    <img class="header_logo" src="img/header_logo.png">
+    <img class="headerLogo" src="img/header_logo.png">
 </header>
-<div id="content_neigborhood">
-    <div class="image__slider">
-        <div class="image__slide__sticks">
-            <div class="slide__stick slide__first_stick"></div>
-            <div class="slide__stick slide__second_stick"></div>
-            <div class="slide__stick slide__third_stick"></div>
+<div id="contentNeigborhood">
+    <div class="slider neighborhoodSlider">
+        <div class="stickBox">
+            <div class="sticBox__stic sticBox__stic1"></div>
+            <div class="sticBox__stic sticBox__stick2"></div>
+            <div class="sticBox__stic sticBox__stic3"></div>
         </div>
-        <div class="image__slider__images">
-            <img class="slide__image first_image " src="img/image05.jpg">
-            <img class="slide__image second_image" src="img/image04.jpg">
-            <img class="slide__image third_image" src="img/image03.jpg">
+        <div class="imgBox neighborhoodSlider__imgBox">
+            <img class="imgBox__image neighborhoodSlider__imgBox__img  " src="img/image05.jpg">
+            <img class="imgBox__image neighborhoodSlider__imgBox__img" src="img/image04.jpg">
+            <img class="imgBox__image neighborhoodSlider__imgBox__img" src="img/image03.jpg">
         </div>
     </div>
-    <h2 class="neighborhood_heading">lic</h2>
-    <p class="open_house__paragraph">
+    <h2 class="neighborhoodHeading">lic</h2>
+    <p class="neighborhoodParagraph">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
         dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
         dolore magna aliqua.
     </p>
-    <a class="gallery__button__link" href="photo_gallery.html">
-        <button class="photo__gallery__button" type="button"> photo gallery</button>
+    <a class="photoGalleryBtn__link" href="photo_gallery.html">
+        <button class="photoGalleryBtn" type="button"> photo gallery</button>
     </a>
     <div id="googleMap" class="google_map"></div>
 </div>
 <footer>
-    <div class="footer_text_area">
-        <p class="footer_text">44-72 11TH STREET, LONG ISLAND CITY, NY, 11101 - 347.662.2106 - <a class="footer_link"
-                                                                                                  href="#">INFO4472@ELEVENTHST.COM</a>
+    <div class="footerTextArea">
+        <p class="footerText">44-72 11TH STREET, LONG ISLAND CITY, NY, 11101 - 347.662.2106 - <a class="footerLink"
+                                                                                                 href="#">INFO4472@ELEVENTHST.COM</a>
         </p>
     </div>
-    <img class="footer_logo" src="img/logo.png"/>
+    <img class="footerLogo" src="img/logo.png"/>
 </footer>
 <script src="js/open_house.js"></script>
 
