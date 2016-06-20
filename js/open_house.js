@@ -6,8 +6,8 @@
 
 
 $(" .sticBox__stic").on('click', function () {
-    $(".active_stick").removeClass("active_stick");
-    $(this).addClass("active_stick");
+    $(".activeStick").removeClass("activeStick");
+    $(this).addClass("activeStick");
 });
 
 
@@ -48,8 +48,8 @@ $(".availabilityRooms__floorplan").on('click', function () {
 
 
 $(" .availabilityMenu__links").on('click', function () {
-    $(".availability__menu__active").removeClass("availability__menu__active");
-    $(this).addClass("availability__menu__active");
+    $(".availabilityMenu__active").removeClass("availabilityMenu__active");
+    $(this).addClass("availabilityMenu__active");
 });
 
 $(".allLinks").on('click', function () {

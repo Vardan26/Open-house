@@ -191,7 +191,7 @@ h1 {
 .sticBox__stic:hover {
     background-color: #fff;
 }
-.active_stick{
+.activeStick {
     background-color: #fff;
 
 }
@@ -207,7 +207,7 @@ h1 {
     width: 100%;
 }
 
-.openHouse__slide_text {
+.openHouse__slide__text {
     width: 100%;
     color: #5cbfaa;
     text-align: center;
@@ -353,7 +353,7 @@ h1 {
     color: #5cc2a8;
 }
 
-.availability__menu__active {
+.availabilityMenu__active {
     border-bottom: 4px solid #5cc2a8;
     color: #5cc2a8;
 }

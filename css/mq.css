@@ -129,7 +129,7 @@
         font-size: 30px;
     }
 
-    .openHouseHeading__text, .openHouse__slide_text, .form__title {
+    .openHouseHeading__text, .openHouse__slide__text, .form__title {
         font-size: 15px;
     }
 
@@ -148,7 +148,7 @@
         bottom: 40px;
     }
 
-    .openHouse__slide_text {
+    .openHouse__slide__text {
         bottom: 15px;
     }
 
