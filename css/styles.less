@@ -8,7 +8,11 @@
   08 footer
   */
 
-body {
+.hidden {
+  display: none !important;
+}
+
+.body {
   position: absolute;
   font-family: 'Arial', sans-serif;
   margin: 160px auto 0;
@@ -19,7 +23,7 @@ body {
   padding-bottom: 180px;
 }
 
-header {
+.header {
   margin: auto;
   width: 100%;
   display: block;
@@ -36,7 +40,6 @@ header {
   color: #5cbfaa;
 }
 
-
 /* 01 header*/
 
 .navMenu__list {
@@ -48,6 +51,7 @@ header {
   background-color: #000;
   text-align: center;
   width: 100%;
+
   &__item {
     margin: 15px 16px;
     display: inline-block;
@@ -61,11 +65,9 @@ header {
     letter-spacing: 3px;;
     font-weight: 900;
   }
-}
-
-.navMenu__list {
   &__links:hover {
     color: #fff;
+
   }
   &__linksActive {
     color: #fff;
@@ -104,9 +106,6 @@ header {
     -moz-animation: imageAnimation 16s linear infinite 0s;
     animation: imageAnimation 16s linear infinite 0s;
   }
-}
-
-.imgBox {
   &__image:nth-child(2) {
     -webkit-animation-delay: 4s;
     -moz-animation-delay: 4s;
@@ -184,11 +183,7 @@ header {
   }
 }
 
-.hidden {
-  display: none !important;
-}
-
-.stickBox {
+.sticBox {
   z-index: 1;
   position: absolute;
   top: 50px;
@@ -202,13 +197,14 @@ header {
   &__stic:hover {
     background-color: #fff;
   }
-  &__.activeStick {
-    background-color: #fff;
-
-  }
   &__stick2 {
     margin: 10px auto;
   }
+}
+
+.activeStick {
+  background-color: #fff;
+
 }
 
 .openHouse__slide {
@@ -263,11 +259,6 @@ header {
   &__link {
     text-decoration: none;
   }
-
-}
-
-.photoGalleryBtn {
-  margin: 40px 0 0 0;
 }
 
 .openHouseHeading {
@@ -340,6 +331,7 @@ header {
   list-style-type: none;
   margin: 20px auto;
   display: block;
+
   &__item {
     display: inline-block;
     margin: auto 20px;
@@ -367,21 +359,26 @@ header {
 .availabilityRooms:not(.availabilityPhotoGallery) {
   margin: auto;
   display: block;
+}
+
+.availabilityRooms {
+
   &__list {
     display: inline-block;
     margin: 3px 0;
     text-align: center;
     height: 30px;
-    &__links,
-    &__names {
-      font-size: 10px;
-      font-weight: 800;
-      letter-spacing: 2px;;
-      text-decoration: none;
-      color: #fff;
-      margin-top: 10px;
-      display: block;
-    }
+
+  }
+  &__lists__names,
+  &__lists__links {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+    display: block;
   }
   &__list:not(.availabilityRooms__type) {
     background-color: #d5d5d5;
@@ -396,31 +393,33 @@ header {
   &__price {
     width: 210px;
   }
+
   &__avail {
     width: 170px;
   }
+
   &__images {
     width: 100px;
   }
+
   &__floorplan {
     width: 160px;
   }
 }
 
-.floorplanText {
-  text-align: center;
-  font-size: medium;
-  width: 900px;
-  margin: 20px auto 20px;
-  font-family: 'fantasy';
-  line-height: 25px;
-  font-weight: 800;
-  text-transform: none;
-  color: #201f25
-}
-
 .floorplan {
   margin-top: 20px;
+  &Text {
+    text-align: center;
+    font-size: medium;
+    width: 900px;
+    margin: 20px auto 20px;
+    font-family: 'fantasy';
+    line-height: 25px;
+    font-weight: 800;
+    text-transform: none;
+    color: #201f25
+  }
 }
 
 .availabilityPhotoGallery {
@@ -474,20 +473,21 @@ header {
   cursor: pointer;
 }
 
-.interiorHeading {
-  margin: 15px auto;
-}
-
-.interiorParagraph {
-  text-align: center;
-  font-size: medium;
-  width: 900px;
-  margin: 20px auto;
-  font-family: 'fantasy';
-  line-height: 25px;
-  font-weight: 700;
-  text-transform: none;
-  color: #201f25
+.interior {
+  &Heading {
+    margin: 15px auto;
+  }
+  &Paragraph {
+    text-align: center;
+    font-size: medium;
+    width: 900px;
+    margin: 20px auto;
+    font-family: 'fantasy';
+    line-height: 25px;
+    font-weight: 700;
+    text-transform: none;
+    color: #201f25
+  }
 }
 
 .availabilityBtn {
@@ -506,20 +506,21 @@ header {
 }
 
 /*05 amenities page*/
-.amenitiesHeading {
-  margin: 15px auto;
-}
-
-.amenitiesParagraph {
-  text-align: center;
-  font-size: medium;
-  width: 900px;
-  margin: 20px auto;
-  font-family: 'fantasy';
-  line-height: 25px;
-  font-weight: 700;
-  text-transform: none;
-  color: #201f25
+.amenities {
+  &Heading {
+    margin: 15px auto;
+  }
+  &Paragraph {
+    text-align: center;
+    font-size: medium;
+    width: 900px;
+    margin: 20px auto;
+    font-family: 'fantasy';
+    line-height: 25px;
+    font-weight: 700;
+    text-transform: none;
+    color: #201f25
+  }
 }
 
 /* 06 neighborhood page*/
@@ -549,43 +550,55 @@ header {
     color: #24232c;
     text-decoration: none;
     line-height: 25px;
-    &Heading {
-      margin: 15px auto 0;
-      font-size: 45px;
-    }
   }
-
-  /* 08 footer*/
-
-  .footer {
-    &TextArea {
-      width: 100%;
-      background-color: black;
-      height: 45px;
-      display: table;
-    }
-    &Text {
-      color: #5cc2a8;
-      text-align: center;
-      font-size: 10px;
-      letter-spacing: 3px;;
-      font-weight: 800;
-      vertical-align: middle;
-      display: table-cell;
-    }
-    &Link {
-      color: #5cc2a8;
-      font-size: 10px;
-      letter-spacing: 3px;;
-      font-weight: 800;
-      text-decoration: none;
-    }
-    &Logo {
-      width: 200px;
-      height: auto;
-      display: block;
-      margin: 20px auto 50px;
-    }
+  &tHeading {
+    margin: 15px auto 0;
+    font-size: 45px;
   }
-
 }
+
+/* 08 footer*/
+
+
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  margin: 50px 0 50px 0;
+
+  &TextArea {
+    width: 100%;
+    background-color: black;
+    height: 45px;
+    display: table;
+  }
+  &Text {
+    color: #5cc2a8;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 3px;;
+    font-weight: 800;
+    vertical-align: middle;
+    display: table-cell;
+  }
+  &Link {
+    color: #5cc2a8;
+    font-size: 10px;
+    letter-spacing: 3px;;
+    font-weight: 800;
+    text-decoration: none;
+  }
+  &Logo {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 20px auto 0;
+  }
+}
+
+@import "mq.css";
+@import "reset.css";
